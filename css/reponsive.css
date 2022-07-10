@@ -311,7 +311,157 @@
     }
 }
 
-@media (min-width:375px) and (max-width: 575px) {
+@media (min-width:414px) and (max-width: 575px) {
+    .mg-bt {
+        padding-bottom: 100px;
+    }
+    #page {
+        width: 100%;
+        height: 100vh;
+        /* overflow: hidden; */
+    }
+    .containerr {
+        padding-bottom: 100px;
+    }
+    .header {
+        display: none;
+    }
+    .card-started {
+        position: relative;
+        float: none;
+        width: auto;
+        height: auto;
+    }
+    .card-inner {
+        position: relative;
+        margin: 15px 0;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        opacity: 0;
+        visibility: visible;
+        border-radius: 4px;
+    }
+    .card-inner.hidden {
+        opacity: 1;
+        visibility: visible;
+        z-index: 9;
+        /* display: none; */
+    }
+    .card-inner.active {
+        display: block;
+        opacity: 1;
+    }
+    .card-inner .card-wrap {
+        overflow: visible;
+        height: auto;
+    }
+    .card-started .profile {
+        height: 600px;
+    }
+    .card-started::before {
+        height: 600px;
+    }
+    .card-started::after {
+        height: 600px;
+    }
+    .card-started .profile.no-photo .slide {
+        height: 55%;
+    }
+    .card-started .profile.no-photo .title {
+        margin-top: 200px;
+    }
+    .services {
+        margin-top: 250px;
+    }
+    .contact .grid {
+        margin-top: 10px;
+    }
+    .about .grid {
+        margin-top: 10px;
+    }
+    .top-menu_mobile {
+        display: block;
+        z-index: 1;
+        height: 70px;
+    }
+    .top-menu_mobile ul {
+        padding: 0 10px 0 0;
+    }
+    .top-menu_mobile ul li.active a .icon {
+        font-size: 25px;
+        transform: translate(5px, -25px);
+        -webkit-transform: translate(5px, -25px);
+        -moz-transform: translate(5px, -25px);
+        -ms-transform: translate(5px, -25px);
+        -o-transform: translate(5px, -25px);
+    }
+    .top-menu_mobile ul li.active a .link {
+        font-size: 14px;
+        transform: translate(5px, 10px);
+        -webkit-transform: translate(5px, 10px);
+        -moz-transform: translate(5px, 10px);
+        -ms-transform: translate(5px, 10px);
+        -o-transform: translate(5px, 10px);
+    }
+    .indicator {
+        width: 65px;
+        top: -45%;
+        height: 65px;
+    }
+    .top-menu_mobile ul li:nth-child(1).active~.indicator {
+        transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        -o-transform: translateX(-20%);
+    }
+    .top-menu_mobile ul li:nth-child(2).active~.indicator {
+        transform: translateX(79%);
+        -webkit-transform: translateX(79%);
+        -moz-transform: translateX(79%);
+        -ms-transform: translateX(79%);
+        -o-transform: translateX(79%);
+    }
+    .top-menu_mobile ul li:nth-child(3).active~.indicator {
+        transform: translateX(182%);
+        -webkit-transform: translateX(182%);
+        -moz-transform: translateX(182%);
+        -ms-transform: translateX(182%);
+        -o-transform: translateX(182%);
+    }
+    .top-menu_mobile ul li:nth-child(3).active a .link {
+        transform: translate(-5px, 10px);
+        -webkit-transform: translate(-5px, 10px);
+        -moz-transform: translate(-5px, 10px);
+        -ms-transform: translate(-5px, 10px);
+        -o-transform: translate(-5px, 10px);
+    }
+    .top-menu_mobile ul li:nth-child(4).active~.indicator {
+        transform: translateX(285%);
+        -webkit-transform: translateX(285%);
+        -moz-transform: translateX(285%);
+        -ms-transform: translateX(285%);
+        -o-transform: translateX(285%);
+    }
+    .top-menu_mobile ul li:nth-child(5).active~.indicator {
+        transform: translateX(385%);
+        -webkit-transform: translateX(385%);
+        -moz-transform: translateX(385%);
+        -ms-transform: translateX(385%);
+        -o-transform: translateX(385%);
+    }
+    .top-menu_mobile ul li:nth-child(6).active~.indicator {
+        transform: translateX(489%);
+        -webkit-transform: translateX(489%);
+        -moz-transform: translateX(489%);
+        -ms-transform: translateX(489%);
+        -o-transform: translateX(489%);
+    }
+}
+
+@media (min-width:375px) and (max-width: 413px) {
     .mg-bt {
         padding-bottom: 100px;
     }
