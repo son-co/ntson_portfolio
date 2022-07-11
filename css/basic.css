@@ -839,11 +839,16 @@ body {
     background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
+.about .grid {
+    margin-top: 10px;
+}
+
 .about .info-list ul {
     list-style-type: none;
     position: absolute;
     left: -10px;
     color: var(--text-black-theme);
+    padding: 0 0 0 15px;
 }
 
 .about .info-list strong {
@@ -1039,6 +1044,10 @@ body {
     list-style-type: disc;
 }
 
+.contact .grid {
+    margin-top: 10px;
+}
+
 .contact .info-list ul {
     padding: 0;
     color: var(--text-black-theme);
@@ -1085,7 +1094,8 @@ body {
     margin-top: 10px;
 }
 
-.contact-form input:focus {
+.contact-form input:focus,
+.contact-form input:hover {
     outline: var(--text-theme);
     border: 2px solid var(--text-theme);
 }
@@ -1097,7 +1107,8 @@ body {
     border: 2px solid #ccc;
 }
 
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form textarea:hover {
     outline: var(--text-theme);
     border: 2px solid var(--text-theme);
 }
@@ -1380,6 +1391,28 @@ body {
     line-height: 30px;
 }
 
+.top-menu_mobile ul li.active a .icon {
+    color: var(--white);
+    z-index: 1;
+    font-size: 30px;
+    transform: translate(8px, -25px);
+    -webkit-transform: translate(8px, -25px);
+    -moz-transform: translate(8px, -25px);
+    -ms-transform: translate(8px, -25px);
+    -o-transform: translate(8px, -25px);
+}
+
+.top-menu_mobile ul li.active a .link {
+    font-size: 20px;
+    transform: translate(-1px, 10px);
+    -webkit-transform: translate(-1px, 10px);
+    -moz-transform: translate(-1px, 10px);
+    -ms-transform: translate(-1px, 10px);
+    -o-transform: translate(-1px, 10px);
+}
+
+
+/* 
 .indicator {
     z-index: -1;
     position: absolute;
@@ -1417,25 +1450,7 @@ body {
     box-shadow: -1px -10px 0 0 transparent;
 }
 
-.top-menu_mobile ul li.active a .icon {
-    color: var(--white);
-    z-index: 1;
-    font-size: 30px;
-    transform: translate(8px, -25px);
-    -webkit-transform: translate(8px, -25px);
-    -moz-transform: translate(8px, -25px);
-    -ms-transform: translate(8px, -25px);
-    -o-transform: translate(8px, -25px);
-}
 
-.top-menu_mobile ul li.active a .link {
-    font-size: 20px;
-    transform: translate(-1px, 10px);
-    -webkit-transform: translate(-1px, 10px);
-    -moz-transform: translate(-1px, 10px);
-    -ms-transform: translate(-1px, 10px);
-    -o-transform: translate(-1px, 10px);
-}
 
 .top-menu_mobile ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(120 * 0.22px));
@@ -1444,27 +1459,6 @@ body {
     -ms-transform: translateX(calc(120 * 0.22px));
     -o-transform: translateX(calc(120 * 0.22px));
 }
-
-
-/* .top-menu_mobile ul li:nth-child(1).active a .icon {
-    color: var(--white);
-    z-index: 1;
-    font-size: 30px;
-    transform: translate(8px, -40px);
-    -webkit-transform: translate(8px, -40px);
-    -moz-transform: translate(8px, -40px);
-    -ms-transform: translate(8px, -40px);
-    -o-transform: translate(8px, -40px);
-}
-
-.top-menu_mobile ul li:nth-child(1).active a .link {
-    font-size: 20px;
-    transform: translateX(-3px);
-    -webkit-transform: translateX(-3px);
-    -moz-transform: translateX(-3px);
-    -ms-transform: translateX(-3px);
-    -o-transform: translateX(-3px);
-} */
 
 .top-menu_mobile ul li:nth-child(2).active~.indicator {
     transform: translateX(calc(120*1.2px));
@@ -1528,4 +1522,4 @@ body {
     -moz-transform: translate(-12px, 10px);
     -ms-transform: translate(-12px, 10px);
     -o-transform: translate(-12px, 10px);
-}
+} */

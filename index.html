@@ -232,7 +232,7 @@
                         <a href="" class="lnk">
                             <span>Download CV</span>
                         </a>
-                        <a href="" class="lnk">
+                        <a href="#contact-card" class="lnk">
                             <span>Contact me</span>
                         </a>
                     </div>
@@ -583,19 +583,19 @@
                             <div class="row">
 
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <input type="text" placeholder="FULL NAME">
+                                    <input type="text" placeholder="FULL NAME" id="name" name="name">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <input type="text" placeholder="EMAIL ADDRESS">
+                                    <input type="text" placeholder="EMAIL ADDRESS" id="email" name="email">
 
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <textarea name="" id="" placeholder="MESSAGE"></textarea>
+                                    <textarea name="message" placeholder="MESSAGE" id="message"></textarea>
                                 </div>
 
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-8">
-                                    <a class="button">
+                                    <a class="button" onclick="sendEmail(); reset(); return false;">
                                         SEND MESSAGE 
                                        </a>
                                 </div>
@@ -613,8 +613,18 @@
     </div>
     </div>
 </body>
+<!-- emailjs -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("oqlXtMNLSt0Mq-UJI");
+    })();
+</script>
+
 <!-- script -->
 <script src="./js/main.js"></script>
+
 
 <!-- font ion icon -->
 <script script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">

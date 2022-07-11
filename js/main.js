@@ -174,3 +174,19 @@ function theme_color(className) {
         }
     }
 }
+
+// --------------------------------send email
+function sendEmail() {
+    var templateParams = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    emailjs.send('service_hkvk5ec', 'template_8j91nan', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
+}
