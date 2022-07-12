@@ -124,7 +124,6 @@ controller.addEventListener('click', () => {
         document.querySelector('.tab-controller').classList.add("animate__fadeOutRight");
         window.setTimeout(function() {
             document.querySelector('.tab-controller').style.display = "none";
-
         }, 1000)
     } else {
         document.querySelector('.tab-controller').classList.toggle("animate__fadeInRight");

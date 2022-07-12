@@ -526,4 +526,7 @@
         border: 4px solid #000;
         margin: -2px -25px;
     }
+    .info-list {
+        font-size: 14px;
+    }
 }

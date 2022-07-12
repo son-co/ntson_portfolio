@@ -50,8 +50,8 @@
     --color-bg-gra: rgba(225, 39, 191, 0.2);
     --color-bg-gra2: rgba(217, 191, 212, 0.3);
     --cardstarted-theme: #C446DA;
-    --bg: #45ADBF;
-    --bg-gra: #1264C0;
+    --bg: #ee73dd;
+    --bg-gra: #f00fcf;
 }
 
 .color-blue-theme {
@@ -145,9 +145,82 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* loader */
+
+.preloader {
+    position: relative;
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    background-color: #78cc6d;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    border: 3px solid;
+    border-color: #fff #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #fff #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 
@@ -852,6 +925,7 @@ body {
 }
 
 .about .info-list strong {
+    width: 80px;
     color: var(--black);
     background-color: var(--text-theme);
     border-radius: 3px;
@@ -1055,6 +1129,7 @@ body {
 }
 
 .contact .info-list strong {
+    width: 80px;
     color: var(--black);
     background-color: var(--text-theme);
     border-radius: 3px;
